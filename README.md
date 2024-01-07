@@ -1,4 +1,4 @@
-# iteck_bootstarp_page
+# iteck-bootstarp-page
 # desktop mode
 # live url of project:
-https://omidjavaherii.github.io/iteck_bootstarp_page/
+https://omidjavaherii.github.io/iteck-bootstarp-page/
