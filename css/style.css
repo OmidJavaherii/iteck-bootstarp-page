@@ -54,14 +54,120 @@ a:hover {
     list-style: none;
     margin: 10px 0 0;
     padding: 0;
+
 }
 .box_menu_header li {
     display: inline-block;
-    margin: 0 15px;
-
+    margin: 0 20px;
+    position: relative;
+}
+.box_menu_header li::after {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #bbb;
+    top: 11px;
+    left: -23px;
+    content: "";
+    border-radius: 50%;
+}
+.box_menu_header li:last-child::after {
+    display: none;
 }
 .box_menu_header li a {
     text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.submenu_header_lvl1 {
+    position: absolute;
+    background-color: #fff;
+    top: 25px;
+    right: -33px;
+    border-radius: 9px;
+    padding: 6px 0;
+    min-width: 150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.066666);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+.main_page_menu_li1:hover .submenu_header_lvl1, .submenu_header_lvl1:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+.submenu_header_lvl1 a {
+    width: 100%;
+    text-align: right;
+    float: right;
+    margin: 0;
+    padding: 5px 6px 6px;
+    transition: 0.3s;
+}
+.submenu_header_lvl1 a:hover {
+    background-color: #e9ecef;
+    transition: 0.3s;
+}
+.submenu_header_lvl1 a:hover li {
+    color: #000 !important;
+    transition: 0.3s;
+}
+.submenu_header_lvl1 li {
+    font-size: 12px;
+    list-style: none;
+    color: #888 !important;
+}
+
+.submenu_header_lvl2 {
+    position: absolute;
+    background-color: #fff;
+    top: 25px;
+    right: -33px;
+    border-radius: 9px;
+    padding: 6px 0;
+    min-width: 150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.066666);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+.main_page_menu_li2:hover .submenu_header_lvl2, .submenu_header_lvl2:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+.submenu_header_lvl2 a {
+    width: 100%;
+    text-align: right;
+    float: right;
+    margin: 0;
+    padding: 5px 6px 6px;
+    transition: 0.3s;
+}
+.submenu_header_lvl2 a:hover {
+    background-color: #e9ecef;
+    transition: 0.3s;
+}
+.submenu_header_lvl2 a:hover li {
+    color: #000 !important;
+    transition: 0.3s;
+}
+.submenu_header_lvl2 li {
+    font-size: 12px;
+    list-style: none;
+    color: #888 !important;
+}
+.box_menu_header li .main_page_menu {
+    color: #6640f4;
+}
+.box_menu_header li .main_page_menu:hover {
+    color: #4a00e1;
+}
+.box_menu_header li a:hover {
+    color: #6640f4;
 }
 .btn_chat_header {
     background-color: #6640f4;
